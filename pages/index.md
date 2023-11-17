@@ -1,5 +1,3 @@
-hi!
+# Welcome to my personal website
 
-## what'supppppp
-
-[test](/test)
+Nothing to see here yet
