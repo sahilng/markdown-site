@@ -4,6 +4,8 @@ import os
 
 app = Flask(__name__)
 
+FLASK_PORT = int(os.environ.get('FLASK_PORT', 80))
+
 @app.route('/')
 @app.route('/<page>')
 def show_page(page='index'):
@@ -17,4 +19,4 @@ def show_page(page='index'):
     return render_template('page_template.html', content=content)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=80)
+    app.run(host='0.0.0.0', debug=True, port=FLASK_PORT)
